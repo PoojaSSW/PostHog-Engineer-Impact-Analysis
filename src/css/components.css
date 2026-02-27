@@ -1,0 +1,385 @@
+/* ─────────────────────────────────────────────
+   components.css  —  All UI component styles
+   ───────────────────────────────────────────── */
+
+/* ── Header ── */
+.header {
+  margin-bottom: 26px;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.header h1 {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+.header-meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: 38px;
+  font-weight: 400;
+}
+.header-meta a {
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  transition: color var(--transition-fast);
+}
+.header-meta a:hover {
+  color: var(--sub);
+}
+
+/* ── Summary Tiles ── */
+.tiles {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.tile {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px 18px 14px;
+  border: 1px solid var(--border);
+  flex: 1;
+  min-width: 120px;
+  box-shadow: var(--shadow-sm);
+}
+.tile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.tile-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.tile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background: var(--input);
+  flex-shrink: 0;
+}
+.tile-value {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+/* ── Top Contributor Card ── */
+.top-card {
+  background: var(--top-bg);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+.top-badge {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--sub);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  margin-bottom: 14px;
+}
+.top-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.avatar {
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--border);
+}
+.avatar-fallback {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+.top-name {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+.top-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.stats-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ── Stat (shared) ── */
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.stat-label {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.stat-value {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/* ── Methodology Box ── */
+.method-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.method-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.1px;
+  margin-bottom: 6px;
+}
+.method-intro {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+.method-intro em {
+  font-style: italic;
+  color: var(--sub);
+}
+.method-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.method-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.method-item strong {
+  color: var(--sub);
+  font-weight: 600;
+}
+.method-num {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sub);
+  background: var(--input);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 7px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Leaderboard Header ── */
+.lb-header {
+  margin-bottom: 10px;
+}
+.lb-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin-bottom: 3px;
+}
+.lb-header p {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* ── Engineer Row ── */
+.eng-row {
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 14px 18px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition:
+    box-shadow var(--transition-base),
+    border-color var(--transition-base);
+  user-select: none;
+}
+.eng-row:hover {
+  box-shadow: var(--shadow-md);
+}
+.eng-row.open {
+  box-shadow: var(--shadow-lg);
+}
+.eng-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rank-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+.eng-info {
+  flex: 1;
+  min-width: 0;
+}
+.eng-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  letter-spacing: -0.1px;
+}
+.eng-handle {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-top: 1px;
+}
+.eng-score-box {
+  text-align: right;
+  flex-shrink: 0;
+}
+.eng-score-label {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+.eng-score-num {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+
+/* ── Score Bar ── */
+.score-bar-wrap {
+  height: 2px;
+  background: var(--input);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.score-bar {
+  height: 100%;
+  border-radius: 99px;
+  width: 0%;
+  transition: width var(--transition-bar);
+}
+
+/* ── Engineer Stats Row ── */
+.eng-stats {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.eng-stats .stat-label {
+  font-size: 10px;
+}
+.eng-stats .stat-value {
+  font-size: 13px;
+}
+
+/* ── Expand Panel ── */
+.expand-body {
+  display: none;
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--bg);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--sub);
+  line-height: 1.7;
+  border-left: 2px solid transparent;
+}
+.expand-body.visible {
+  display: block;
+}
+.expand-body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.expand-body ul {
+  list-style: disc;
+  margin: 6px 0 0 14px;
+  padding: 0;
+}
+.expand-body li {
+  margin-bottom: 3px;
+}
+.expand-body .note {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: var(--card);
+  border-radius: 6px;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 11px;
+  border: 1px solid var(--border);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 11px;
+  color: #c0c0d0;
+}
+.footer a {
+  color: #c0c0d0;
+  border-bottom: 1px solid transparent;
+  transition: color var(--transition-fast);
+}
+.footer a:hover {
+  color: var(--muted);
+}

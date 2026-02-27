@@ -1,0 +1,69 @@
+/* ─────────────────────────────────────────────
+   layout.css  —  Page layout & responsive rules
+   ───────────────────────────────────────────── */
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* ── Tablet ── */
+@media (max-width: 720px) {
+  body {
+    padding: 20px 16px 40px;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-row {
+    gap: 20px;
+  }
+
+  .eng-stats {
+    gap: 14px;
+  }
+
+  .method-box {
+    padding: 14px 16px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .tile-value {
+    font-size: 22px;
+  }
+
+  .top-card {
+    padding: 16px;
+  }
+
+  .stats-row {
+    gap: 14px;
+  }
+
+  .eng-row {
+    padding: 12px 14px;
+  }
+
+  .eng-stats {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .eng-score-num {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,49 @@
+/* ─────────────────────────────────────────────
+   tokens.css  —  Design tokens & CSS variables
+   ───────────────────────────────────────────── */
+
+:root {
+  /* Rank accent colours (1–5) */
+  --c1: #e8603c;   /* soft orange  */
+  --c2: #5b7ff1;   /* periwinkle   */
+  --c3: #3baa72;   /* sage green   */
+  --c4: #9b72cf;   /* soft purple  */
+  --c5: #d4954a;   /* warm amber   */
+
+  /* Typography */
+  --text:   #1a1a2e;
+  --sub:    #4a4a6a;
+  --muted:  #9090aa;
+
+  /* Surfaces */
+  --bg:     #f5f5f8;
+  --card:   #ffffff;
+  --input:  #f0f0f5;
+  --top-bg: #eeeef8;
+
+  /* Borders */
+  --border: #eaeaef;
+
+  /* Spacing scale */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(0,0,0,.04);
+  --shadow-md: 0 2px 10px rgba(0,0,0,.06);
+  --shadow-lg: 0 4px 18px rgba(0,0,0,.08);
+
+  /* Transitions */
+  --transition-fast: .15s ease;
+  --transition-base: .18s ease;
+  --transition-bar:  1.2s cubic-bezier(.4,0,.2,1);
+}
